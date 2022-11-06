@@ -1,4 +1,7 @@
 let degrees = 0
+input.onButtonPressed(Button.AB, function () {
+    input.calibrateCompass()
+})
 basic.forever(function () {
     degrees = input.compassHeading()
     if (degrees < 22.5) {
